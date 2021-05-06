@@ -1,0 +1,99 @@
+GET  http://localhost:8080/API/login
+auth-token :eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJjb2lkIjoiRE1PIiwidXNlcklkIjoiSE4iLCJpYXQiOjE2MTYzMDk0ODcsImV4cCI6MTY0NzQxMzQ4N30.Tf0yMMwct8L4hhNm-XYxrE9nC1Lxvx2UOhMEVAiV0aL7IaWcmwd0fwZy3xmYCkIB
+###
+GET  http://localhost:8080/API/login/dmo
+auth-token :eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJjb2lkIjoiRE1PIiwidXNlcklkIjoiSE4iLCJpYXQiOjE2MTYzMDk0ODcsImV4cCI6MTY0NzQxMzQ4N30.Tf0yMMwct8L4hhNm-XYxrE9nC1Lxvx2UOhMEVAiV0aL7IaWcmwd0fwZy3xmYCkIB
+###
+
+GET  http://localhost:8080/API/login/dmo/hn
+auth-token :eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJjb2lkIjoiRE1PIiwidXNlcklkIjoiSE4iLCJpYXQiOjE2MTYzMDk0ODcsImV4cCI6MTY0NzQxMzQ4N30.Tf0yMMwct8L4hhNm-XYxrE9nC1Lxvx2UOhMEVAiV0aL7IaWcmwd0fwZy3xmYCkIB
+###s
+
+POST http://localhost:8080/API/login/auth
+Content-Type: application/json
+
+{
+"coid":"DMO",
+"userId": "hn",
+"userPassword": "hn"
+}
+
+### resginster new email
+POST http://localhost:8080/API/login
+auth-token :eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJjb2lkIjoiRE1PIiwidXNlcklkIjoiSE4iLCJpYXQiOjE2MTYzMDk0ODcsImV4cCI6MTY0NzQxMzQ4N30.Tf0yMMwct8L4hhNm-XYxrE9nC1Lxvx2UOhMEVAiV0aL7IaWcmwd0fwZy3xmYCkIB
+Content-Type: application/json
+
+{
+    "coid":"DMO",
+    "userId": "HN",
+    "userPassword": "hn",
+    "userName": "hendra",
+    "userStatus": "Active",
+    "userBlock": "",
+    "userMail": "hendra.sanusi@gmail.com",
+    "userGroup": "Grup"
+}
+
+
+### resginster new email
+DELETE http://localhost:8080/API/login/dmo/hn
+auth-token :eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJjb2lkIjoiRE1PIiwidXNlcklkIjoiSE4iLCJpYXQiOjE2MTYzMDk0ODcsImV4cCI6MTY0NzQxMzQ4N30.Tf0yMMwct8L4hhNm-XYxrE9nC1Lxvx2UOhMEVAiV0aL7IaWcmwd0fwZy3xmYCkIB
+
+
+### resginster new email
+PUT http://localhost:8080/API/login
+auth-token :eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJjb2lkIjoiRE1PIiwidXNlcklkIjoiSE4iLCJpYXQiOjE2MTYzMDk0ODcsImV4cCI6MTY0NzQxMzQ4N30.Tf0yMMwct8L4hhNm-XYxrE9nC1Lxvx2UOhMEVAiV0aL7IaWcmwd0fwZy3xmYCkIB
+Content-Type: application/json
+
+
+{
+    "userId": "hn",
+    "userPassword": "yyy",
+    "userName": "APALOpuny",
+    "userStatus": "yb",
+    "userBlock": "",
+    "userMail": "jz.sanusi@gmail.com",
+    "userGroup": "aGrup"
+}
+
+
+##### pn0010
+
+### register master
+POST http://localhost:8080/API/pn0010
+auth-token :eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJjb2lkIjoiRE1PIiwidXNlcklkIjoiSE4iLCJpYXQiOjE2MTYzMDk0ODcsImV4cCI6MTY0NzQxMzQ4N30.Tf0yMMwct8L4hhNm-XYxrE9nC1Lxvx2UOhMEVAiV0aL7IaWcmwd0fwZy3xmYCkIB
+Content-Type: application/json
+
+{
+"empid":"TES2",
+"empnm":"hendra sanusi",
+"hiredt":"2021-04-06",
+"privatemail":"hendra.sanusi.gmail.com",
+"officemail":"hendra@office.com",
+"gender":"laki-laki",
+"blood":"A",
+"religion":"Islam",
+"citizen":"WNI",
+"homeaddr":"Depok",
+"atstart" :"2021-04-06",
+"pystart" :"2021-05-01",
+"birthdt":"1988-11-03"
+}
+
+
+### 
+DELETE http://localhost:8080/API/pn0010/tes2
+auth-token :eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJjb2lkIjoiRE1PIiwidXNlcklkIjoiSE4iLCJpYXQiOjE2MTYzMDk0ODcsImV4cCI6MTY0NzQxMzQ4N30.Tf0yMMwct8L4hhNm-XYxrE9nC1Lxvx2UOhMEVAiV0aL7IaWcmwd0fwZy3xmYCkIB
+
+
+
+###
+
+GET  http://localhost:8080/API/pn0010/tes2
+auth-token :eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJjb2lkIjoiRE1PIiwidXNlcklkIjoiSE4iLCJpYXQiOjE2MTYzMDk0ODcsImV4cCI6MTY0NzQxMzQ4N30.Tf0yMMwct8L4hhNm-XYxrE9nC1Lxvx2UOhMEVAiV0aL7IaWcmwd0fwZy3xmYCkIB
+###
+
+
+GET  http://localhost:8080/API/pn0010
+auth-token :eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJjb2lkIjoiRE1PIiwidXNlcklkIjoiSE4iLCJpYXQiOjE2MTYzMDk0ODcsImV4cCI6MTY0NzQxMzQ4N30.Tf0yMMwct8L4hhNm-XYxrE9nC1Lxvx2UOhMEVAiV0aL7IaWcmwd0fwZy3xmYCkIB
+###
